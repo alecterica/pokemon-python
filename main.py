@@ -6,13 +6,16 @@ Created on Sat Aug 13 01:09:01 2022
 """
 
 import pygame
+
+import tile
 import config
 import player_new
 from game import Game
 from game_state import GameState
 
+
 SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 1000
+SCREEN_HEIGHT = 700
 
 pygame.init()
 
@@ -24,12 +27,14 @@ clock = pygame.time.Clock()
 game = Game(screen)
 game.set_up()
 
-P1 = player_new.Trainer(500, 500, 1)
+#P1 = player_new.Trainer(500, 500, 1)
+
 
 while game.game_state == GameState.RUNNING:
-    clock.tick(50)
+    clock.tick(5)
     game.update()
 
-    P1.draw(screen)
+    #P1.draw(screen)
+
     pygame.display.flip()
 

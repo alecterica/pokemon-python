@@ -8,7 +8,12 @@ Created on Sat Aug 13 01:21:59 2022
 # colors
 BLACK = (0,0,0)
 WHITE = (255,255,255)
+RED = (255,0,0)
+BLUE = (0,255,0)
+SCALE = 32
 
-SCALE = 10
+
+
+
 
 
